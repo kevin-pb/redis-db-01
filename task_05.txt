@@ -1,0 +1,12 @@
+HMSET user_I name Juan age 35 email juan_4567@gamil.com
+HMSET user_II name Rogrigo age 25 email Rodrigo_17@gamil.com
+HMSET user_III name Ernesto age 19 email E_r_nesto@gamil.com
+
+HGETALL user_I
+HGETALL user_II
+HGETALL user_III
+
+HMSET user_I age 39
+
+FT.CREATE index user_I email
+
